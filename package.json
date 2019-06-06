@@ -1,0 +1,53 @@
+{
+  "name": "noop",
+  "version": "1.0.0",
+  "description": "Doing nothing with high certainty.",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "clean": "rimraf dist",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:dev": "jest --coverage --coverageReporters=text --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isthisstackoverflow/noop.git"
+  },
+  "keywords": [
+    "noop",
+    "javascript"
+  ],
+  "author": "Dennis Sen <superfastblitzmann@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/isthisstackoverflow/noop/issues"
+  },
+  "homepage": "https://github.com/isthisstackoverflow/noop#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-transform-modules-commonjs": "^7.4.4",
+    "babel-jest": "^24.8.0",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jest": "^22.6.4",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "husky": "^2.4.0",
+    "jest": "^24.8.0",
+    "rimraf": "^2.6.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm test"
+    }
+  }
+}
