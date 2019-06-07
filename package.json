@@ -1,5 +1,5 @@
 {
-  "name": "noop",
+  "name": "@underdash/noop",
   "version": "1.0.0",
   "description": "Doing nothing with high certainty.",
   "main": "dist/index.js",
