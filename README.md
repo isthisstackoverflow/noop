@@ -4,7 +4,7 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/isthisstackoverflow/noop/badge.svg)](https://snyk.io/test/github/isthisstackoverflow/noop)
 [![Maintainability](https://api.codeclimate.com/v1/badges/2f4463498d778b5a7b44/maintainability)](https://codeclimate.com/github/isthisstackoverflow/noop/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/2f4463498d778b5a7b44/test_coverage)](https://codeclimate.com/github/isthisstackoverflow/noop/test_coverage)
-[![Node version](https://img.shields.io/node/v/@underdash/noop.svg?style=flat)](http://nodejs.org/download/)
+[![NPM Version](https://badge.fury.io/js/%40underdash%2Fnoop.svg)](https://www.npmjs.com/package/@underdash/noop)
 
 # noop ○
 
