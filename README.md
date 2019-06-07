@@ -1,4 +1,10 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+[![Build Passing](https://travis-ci.org/isthisstackoverflow/noop.svg?branch=master)]
+[![Known Vulnerabilities](https://snyk.io/test/github/isthisstackoverflow/noop/badge.svg)](https://snyk.io/test/github/isthisstackoverflow/noop)
+[![Maintainability](https://api.codeclimate.com/v1/badges/2f4463498d778b5a7b44/maintainability)](https://codeclimate.com/github/isthisstackoverflow/noop/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/2f4463498d778b5a7b44/test_coverage)](https://codeclimate.com/github/isthisstackoverflow/noop/test_coverage)
+[![Node version](https://img.shields.io/node/v/@underdash/noop.svg?style=flat)](http://nodejs.org/download/)
 
 # noop ○
 
@@ -10,7 +16,9 @@ Doing nothing with an automated deployment pipeline and intensive testing proced
 
 ## Installation
 
-noop is not yet published on npm, but feel free to fork it for now!
+```
+  npm i @underdash/noop
+```
 
 ## Usage
 
@@ -25,13 +33,3 @@ Any parameter you add will be safely ignored.
 ```js
   noop(null) // same as noop(), but makes the code look hacky
 ```
-
-## TODO
-
-* Publish on npm
-* Automatic build with Travis
-* Use an automated testing tool
-* Use something to sniff code smells
-* Maybe a GitHub Page with documentation
-* Add Emojis?
-* Add graphics

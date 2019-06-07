@@ -24,6 +24,7 @@ deploy:
   provider: npm
   email: "superfastblitzmann@gmail.com"
   api_key: $NPM_API_TOKEN
+  skip_cleanup: true
 notifications:
   email:
     recipients:
