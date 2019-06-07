@@ -20,6 +20,10 @@ script:
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 # annoy me if something breaks
+deploy:
+  provider: npm
+  api_key: $NPM_API_TOKEN
+  on: deploy-npm-release
 notifications:
   email:
     recipients:
