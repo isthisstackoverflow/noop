@@ -1,0 +1,28 @@
+language: node_js
+env:
+  global:
+    - CC_TEST_REPORTER_ID=$CC_TEST_TOKEN
+# currently always running on newest node version
+node_js:
+  - "node"
+cache:
+  directories:
+  - node_modules
+# codeclimate tool prep
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+script:
+  - npm run lint
+  - npm test
+  - npm run build
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+# annoy me if something breaks
+notifications:
+  email:
+    recipients:
+    - superfastblitzmann@gmail.com
+    on_success: change
+    on_failure: always
